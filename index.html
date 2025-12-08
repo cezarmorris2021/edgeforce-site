@@ -2,16 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>EdgeForce Digital Capital – Fueling Businesses With the Power to Grow</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="EdgeForce Digital Capital provides business credit education and funding readiness guidance." />
-  <link rel="stylesheet" href="style.css" />
+  <title>EdgeForce Digital Capital – Funding Readiness & Business Credit Education</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="EdgeForce Digital Capital provides funding readiness reviews and business credit education for small businesses.">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <div class="container">
+
     <header>
       <h1>EdgeForce Digital Capital</h1>
-      <p>Fueling Businesses With the Power to Grow.</p>
+      <p>Funding readiness and business credit education for real-world owners.</p>
+
       <nav class="nav">
         <a href="#about">About</a>
         <a href="#services">Services</a>
@@ -20,75 +23,100 @@
       </nav>
     </header>
 
-    <section class="hero" id="about">
-      <h2>Business credit education and funding preparation.</h2>
+    <section id="about" class="hero">
+      <h2>Clarity before capital.</h2>
       <p>
-        EdgeForce helps business owners understand the basics of business credit, organize their documentation, 
-        and prepare for conversations with lenders or funding partners. We focus on education and readiness, not lending.
+        EdgeForce helps business owners understand how business credit works, what information
+        they may need ready, and how to organize their profile before approaching lenders or
+        funding partners. We focus on education, structure, and readiness — not hype.
       </p>
+
       <div class="cta-row">
         <a href="#packages" class="btn-primary">View Advisory Options</a>
-        <a href="#services" class="btn-outline">See What We Cover</a>
+        <a href="#contact" class="btn-outline">Request a Readiness Review</a>
       </div>
     </section>
 
-    <section class="section" id="services">
+    <section id="services" class="section">
       <h3>What EdgeForce Provides</h3>
-      <p class="lead">Educational and preparation-focused support for small businesses.</p>
+      <p class="lead">Guidance and education to help you feel more prepared before you talk to lenders.</p>
+
       <div class="grid grid-3">
         <div class="card">
           <h4>Business Credit Education</h4>
-          <p>Explaining how business credit works, what lenders typically look for, and common misconceptions.</p>
+          <p>Plain-language breakdowns of how business credit typically works and what lenders might review.</p>
         </div>
+
         <div class="card">
           <h4>Funding Readiness Checklists</h4>
-          <p>Helping clients understand which pieces they may need in place before applying for funding.</p>
+          <p>Simple checklists that help you gather and organize key information about your business.</p>
         </div>
+
         <div class="card">
-          <h4>Vendor & Tier Guidance</h4>
-          <p>General guidance on building relationships and credit profiles with vendors and suppliers.</p>
+          <h4>Profile & Documentation Review</h4>
+          <p>Basic review of your current setup (entity, banking, presence) to highlight strengths and potential gaps.</p>
         </div>
       </div>
     </section>
 
-    <section class="section" id="packages">
-      <h3>Advisory Packages</h3>
-      <p class="lead">You can adjust prices based on your experience and demand.</p>
+    <section id="packages" class="section">
+      <h3>Example Advisory Packages</h3>
+      <p class="lead">You set the final pricing. These are sample structures you can adjust as needed.</p>
+
       <div class="grid grid-2">
         <div class="card">
-          <span class="badge">Starter Review</span>
-          <h4>$199 – Funding Readiness Review (example)</h4>
-          <p>Intake, document review, and a short written summary of what looks strong and what may need work.</p>
+          <h4>Starter Snapshot</h4>
+          <p class="highlight">$199 (example)</p>
+          <p>Questionnaire + light document check + short written summary of where you look strong and where to improve.</p>
         </div>
+
         <div class="card">
-          <span class="badge">Credit Blueprint</span>
-          <h4>$299 – Business Credit Blueprint (example)</h4>
-          <p>Personalized roadmap with steps and timelines for building a stronger business credit profile.</p>
+          <h4>Credit Blueprint</h4>
+          <p class="highlight">$299 (example)</p>
+          <p>A more detailed, plain-language roadmap of possible steps to work toward a stronger business credit profile over time.</p>
         </div>
+
         <div class="card">
-          <span class="badge">Full Prep</span>
-          <h4>$499 – Full Funding Preparation (example)</h4>
-          <p>Deeper review, document organization, and a readiness plan for future lender conversations.</p>
+          <h4>Full Prep Review</h4>
+          <p class="highlight">$499 (example)</p>
+          <p>Deeper review, better organization of your information, and a clear readiness plan before you approach lenders.</p>
         </div>
       </div>
     </section>
 
-    <section class="section" id="contact">
+    <section id="contact" class="section">
       <h3>Contact EdgeForce</h3>
-      <p class="lead">
-        For advisory availability and next-step details:
-      </p>
-      <p>Email: <strong>EdgeForceCapital@gmail.com</strong></p>
-      <p>Location: Arizona, USA</p>
+      <p class="lead">Share a bit about your situation and what you’re trying to achieve.</p>
+
+      <form action="https://formsubmit.co/EdgeForceCapital@gmail.com" method="POST" class="card" style="padding:20px;">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_subject" value="New EdgeForce Inquiry">
+
+        <label>Name:</label>
+        <input type="text" name="name" required>
+
+        <label>Email:</label>
+        <input type="email" name="email" required>
+
+        <label>Business / Location (optional):</label>
+        <input type="text" name="business" placeholder="e.g. Trucking company – Arizona">
+
+        <label>What are you trying to accomplish?</label>
+        <textarea name="message" rows="4" required placeholder="Describe your funding or credit goals in simple terms."></textarea>
+
+        <button class="btn-primary">Submit</button>
+      </form>
     </section>
 
     <footer class="footer">
-      © <span id="year"></span> EdgeForce Digital Capital. All rights reserved.
+      © <span id="year"></span> EdgeForce Digital Capital.
     </footer>
+
   </div>
 
   <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById("year").textContent = new Date().getFullYear();
   </script>
+
 </body>
 </html>
